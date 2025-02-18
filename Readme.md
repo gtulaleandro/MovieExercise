@@ -107,7 +107,7 @@ These solutions contain unit test for each layer.
 
 # API Execution
 ```sh 
-curl --location --request GET 'http://localhost:8080/api/directors?threshold=4%0A' \
+curl --location --request GET 'http://localhost:8080/api/directors?threshold=4' \
 --header 'Content-Type: application/json' \
 --data '
 '
