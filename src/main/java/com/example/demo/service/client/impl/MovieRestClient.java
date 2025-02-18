@@ -78,7 +78,7 @@ public class MovieRestClient implements CustomClient {
      *
      * @param e    The exception that caused the failure after all retries.
      * @param page The page number of the request that failed.
-     * @return An {@link Optional} empty instance, indicating that the API response could not be retrieved.
+     * throw an exception if some we exceed number of retries.
      */
     @Recover
     public Optional<MovieResponseDto> recoverFromApiError(ResponseStatusException e, int page) {
